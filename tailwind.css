@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+@layer components {
+  .hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(100, 149, 237, 0.4),
+        rgba(137, 207, 240, 0.8)
+      ),
+      url("/banner.jpg");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-attachment: fixed;
+    border-radius: 8px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
