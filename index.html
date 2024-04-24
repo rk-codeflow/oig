@@ -15,6 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- header -->
@@ -33,15 +36,34 @@
           <h2
             class="text-center text-2xl md:text-4xl lg:text-6xl text-white font-semibold tracking-wide mb-5"
           >
-            Your <span class="text-yellow">Gateway</span> <br />
-            To <span class="text-yellow">Learning</span>
+            <span class="text-white">Your</span>
+            <span class="text-yellow"> Gateway</span> <br />
+            <span class="text-white"> To</span>
+            <span class="text-white">Learning</span>
           </h2>
-          <p class="text-primary-100 text-xl">
+          <p class="text-primary-100 text-base sm:text-xl text-center mb-5">
             Our Platform Lets You Dive Deep into Various University Question
             Papers, Enabling Comprehensive Learning.
           </p>
+          <div class="flex items-center gap-x-2 cursor-pointer">
+            <h2
+              class="text-primary-100 text-xl sm:text-2xl md:text-4xl font-bold"
+            >
+              Explore
+            </h2>
+            <i data-feather="arrow-down" class="animate"></i>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- google ad -->
+    <!-- remove flex and justify in production-->
+    <div class="mb-8 flex justify-center h-24 py-4">
+      <img src="./ad.png" alt="Ad will be displayed here" />
+    </div>
+
+    <!-- script js -->
+    <script src="script.js"></script>
   </body>
 </html>
