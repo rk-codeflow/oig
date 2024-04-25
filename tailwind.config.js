@@ -10,6 +10,7 @@ module.exports = {
           300: "rgba(137, 207, 240, 0.8)",
         },
         yellow: "#faa80a",
+        grey: "#F0F1F2",
       },
     },
   },

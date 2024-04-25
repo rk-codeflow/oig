@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
 
-    <!-- feather icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="css/icofont/icofont.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -45,13 +45,13 @@
             Our Platform Lets You Dive Deep into Various University Question
             Papers, Enabling Comprehensive Learning.
           </p>
-          <div class="flex items-center gap-x-2 cursor-pointer">
+          <div class="flex items-center gap-x-1 cursor-pointer">
             <h2
               class="text-primary-100 text-xl sm:text-2xl md:text-4xl font-bold"
             >
               Explore
             </h2>
-            <i data-feather="arrow-down" class="animate"></i>
+            <i class="icofont-long-arrow-down icofont-3x animate"></i>
           </div>
         </div>
       </div>
@@ -59,10 +59,49 @@
 
     <!-- google ad -->
     <!-- remove flex and justify in production-->
-    <div class="mb-8 flex justify-center h-24 py-4">
+    <!-- <div class="mb-8 flex justify-center h-24 py-4">
       <img src="./ad.png" alt="Ad will be displayed here" />
-    </div>
+    </div> -->
 
+    <!-- stat -->
+    <section class="bg-grey py-8 stat-section">
+      <div
+        class="container mx-auto flex flex-col gap-y-6 sm:flex-row sm:justify-around"
+      >
+        <!-- coffee-->
+        <div class="flex flex-col items-center gap-y-2">
+          <i class="icofont-coffee-pot icofont-3x text-yellow"></i>
+          <h3
+            class="text-xl sm:text-3xl md:text-5xl font-bold text-primary-100"
+          >
+            500+
+          </h3>
+          <p class="text-base sm:text-lg text-primary-100">Coffee consumed</p>
+        </div>
+
+        <!-- university-->
+        <div class="flex flex-col items-center gap-y-2">
+          <i class="icofont-university icofont-3x text-yellow"></i>
+          <h3
+            class="text-xl sm:text-3xl md:text-5xl font-bold text-primary-100"
+          >
+            10+
+          </h3>
+          <p class="text-base sm:text-lg text-primary-100">University</p>
+        </div>
+
+        <!-- papers-->
+        <div class="flex flex-col items-center gap-y-2">
+          <i class="icofont-paper icofont-3x text-yellow"></i>
+          <h3
+            class="text-xl sm:text-3xl md:text-5xl font-bold text-primary-100"
+          >
+            2000+
+          </h3>
+          <p class="text-base sm:text-lg text-primary-100">Question Papers</p>
+        </div>
+      </div>
+    </section>
     <!-- script js -->
     <script src="script.js"></script>
   </body>
