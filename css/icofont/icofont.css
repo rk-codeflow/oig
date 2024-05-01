@@ -53,6 +53,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea92";
 }
 
+.icofont-arrow-up:before
+{
+  content: "\ea5e";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {
