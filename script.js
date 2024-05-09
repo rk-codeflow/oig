@@ -26,6 +26,51 @@ const univs = [
   },
 ];
 
+const subjects = [
+  {
+    id: 1,
+    sub: "Engineering Maths",
+    sem: "I",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi aut excepturi iure tenetur at",
+    credit: 3,
+  },
+  {
+    id: 2,
+    sub: "Chemistry",
+    sem: "I",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi aut excepturi iure tenetur at",
+    credit: 4,
+  },
+  {
+    id: 3,
+    sub: "Communication Technique",
+    sem: "I",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi aut excepturi iure tenetur at",
+    credit: 2,
+  },
+  {
+    id: 4,
+    sub: "Programming in C",
+    sem: "I",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi aut excepturi iure tenetur at",
+    credit: 3,
+  },
+  {
+    id: 5,
+    sub: "Basic Electrical Engineering",
+    sem: "I",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi aut excepturi iure tenetur at",
+    credit: 3,
+  },
+  {
+    id: 6,
+    sub: "Mechanical workshop",
+    sem: "I",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nisi aut excepturi iure tenetur at",
+    credit: 1,
+  },
+];
+
 // university
 const university = document.querySelector(".university");
 
