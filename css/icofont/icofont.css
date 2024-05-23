@@ -58,6 +58,46 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea5e";
 }
 
+.icofont-star-shape:before
+{
+  content: "\e820";
+}
+
+.icofont-bulb-alt:before
+{
+  content: "\eec9";
+}
+
+.icofont-bullseye:before
+{
+  content: "\eecc";
+}
+
+.icofont-cube:before
+{
+  content: "\eef7";
+}
+
+.icofont-diamond:before
+{
+  content: "\ef01";
+}
+
+.icofont-gears:before
+{
+  content: "\ef3b";
+}
+
+.icofont-infinite:before
+{
+  content: "\ef4d";
+}
+
+.icofont-layers:before
+{
+  content: "\ef5c";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

@@ -78,10 +78,13 @@ const course = document.querySelector(".course-box");
 // University list here
 const getUniversityList = () => {
   let universityList = univs.map((univ) => {
-    return `<div class="cursor-pointer" key="${univ.id}">
-      <h5 class="font-semibold">${univ.name}</h5>
-        <p class="font-light text-sm">${univ.numberOfPapers} papers</p>
-      </div>`;
+    return `<div class="cursor-pointer flex gap-x-2" key="${univ.id}">
+              <i class="icofont-star-shape icofont-2x "></i>
+              <div>
+                <h5 class="font-semibold">${univ.name}</h5>
+                <p class="font-light text-sm">${univ.numberOfPapers} papers</p>
+              </div>
+            </div>`;
   });
   university.innerHTML = universityList.join("");
 };
@@ -96,7 +99,7 @@ const getCourseList = () => {
     return `
     <div
     key=${subject.id}
-    class="p-4 cursor-pointer rounded-xl bg-white border-2 border-primary-100 group transition duration-200 ease-linear hover:bg-primary-100"
+    class="p-4 cursor-pointer rounded-xl bg-white border-2 border-primary-100 group transition duration-300 ease-in-out hover:bg-primary-100"
   >
     <div class="flex justify-between">
       <p class="font-medium text-xl group-hover:text-white">Semestar</p>
