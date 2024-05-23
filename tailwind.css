@@ -57,4 +57,11 @@ body {
       transform: scale(0.75);
     }
   }
+
+  /* course-box */
+  .course-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 }
