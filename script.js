@@ -3,26 +3,31 @@ const univs = [
     id: 1,
     name: "Pokhara University",
     numberOfPapers: 200,
+    icon: "star-shape",
   },
   {
     id: 2,
     name: "Tribhuvan University",
     numberOfPapers: 300,
+    icon: "bulb-alt",
   },
   {
     id: 3,
     name: "Kathmandu University",
     numberOfPapers: 400,
+    icon: "bullseye",
   },
   {
     id: 4,
     name: "Khowpa University",
     numberOfPapers: 500,
+    icon: "diamond",
   },
   {
     id: 5,
     name: "Far Western University",
     numberOfPapers: 600,
+    icon: "gears",
   },
 ];
 
@@ -78,8 +83,8 @@ const course = document.querySelector(".course-box");
 // University list here
 const getUniversityList = () => {
   let universityList = univs.map((univ) => {
-    return `<div class="cursor-pointer flex gap-x-2" key="${univ.id}">
-              <i class="icofont-star-shape icofont-2x "></i>
+    return `<div class="cursor-pointer flex gap-x-2 items-center" key="${univ.id}">
+              <div class="bg-primary-100 text-white p-0.5 rounded-md"><i class="icofont-${univ.icon} icofont-2x"></i></div>
               <div>
                 <h5 class="font-semibold">${univ.name}</h5>
                 <p class="font-light text-sm">${univ.numberOfPapers} papers</p>
