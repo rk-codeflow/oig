@@ -86,7 +86,7 @@ const getUniversityList = () => {
     return `<div class="cursor-pointer flex gap-x-2 items-center" key="${univ.id}">
               <div class="bg-primary-100 text-white p-0.5 rounded-md"><i class="icofont-${univ.icon} icofont-2x"></i></div>
               <div>
-                <h5 class="font-semibold">${univ.name}</h5>
+                <h5 class="font-semibold text-sm">${univ.name}</h5>
                 <p class="font-light text-sm">${univ.numberOfPapers} papers</p>
               </div>
             </div>`;

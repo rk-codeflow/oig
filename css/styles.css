@@ -647,13 +647,6 @@ html {
   gap: 1rem;
 }
 
-.courses select {
-  outline: 2px solid #003153;
-  height: 35px;
-  border-radius: 5px;
-  padding: 5px;
-}
-
 .fixed {
   position: fixed;
 }
@@ -714,6 +707,10 @@ html {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .w-10 {
@@ -853,6 +850,10 @@ html {
   padding: 1rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -888,6 +889,11 @@ html {
   padding-bottom: 2rem;
 }
 
+.px-\[6px\] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -915,6 +921,11 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -966,6 +977,22 @@ html {
 
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-2 {
+  outline-width: 2px;
+}
+
+.outline-offset-2 {
+  outline-offset: 2px;
+}
+
+.outline-primary-100 {
+  outline-color: #003153;
 }
 
 .transition {
@@ -1038,6 +1065,11 @@ body {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
