@@ -76,9 +76,55 @@ const subjects = [
   },
 ];
 
+const semestars = [
+  {
+    id: 0,
+    sem: "All",
+  },
+  {
+    id: 1,
+    sem: "I",
+  },
+  {
+    id: 2,
+    sem: "II",
+  },
+  {
+    id: 3,
+    sem: "III",
+  },
+  {
+    id: 4,
+    sem: "IV",
+  },
+  {
+    id: 5,
+    sem: "V",
+  },
+  {
+    id: 6,
+    sem: "VI",
+  },
+  {
+    id: 7,
+    sem: "VII",
+  },
+  {
+    id: 8,
+    sem: "VIII",
+  },
+];
+
 // university
 const university = document.querySelector(".university");
+const universitySelect = document.getElementById("univ-select");
 const course = document.querySelector(".course-box");
+
+const univOptions = univs.map((univ) => {
+  return `<option value="${univ.id}">${univ.name}</option>`;
+});
+
+universitySelect.innerHTML = univOptions.join("");
 
 // University list here
 const getUniversityList = () => {
@@ -134,6 +180,16 @@ const getCourseList = () => {
 window.addEventListener("DOMContentLoaded", () => {
   getCourseList();
 });
+
+// Semestar mapping
+const select = document.getElementById("semestar");
+const options = semestars.map((sem, index) => {
+  return `<option value="${sem.id}">${
+    index === 0 ? sem.sem : "Semestar " + sem.sem
+  }</option>`;
+});
+
+select.innerHTML = options.join("");
 
 // footer year
 const getYear = document.querySelector(".year");

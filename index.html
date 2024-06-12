@@ -107,7 +107,7 @@
 
     <!-- university and subjects-->
     <section class="py-8 flex gap-16 container mx-auto px-4">
-      <div class="w-72 max-w-80">
+      <div class="w-72 max-w-80 hidden sm:block">
         <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-7">
           Universities
         </h3>
@@ -116,23 +116,20 @@
       </div>
 
       <div class="courses w-full">
-        <div class="flex justify-between">
-          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-7">Courses</h3>
+        <div
+          class="mb-2 sm:mb-7 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2"
+        >
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl">Courses</h3>
+          <select
+            name="university"
+            id="univ-select"
+            class="outline outline-2 outline-primary-100 bg-white rounded-md h-9 p-1 sm:hidden"
+          ></select>
           <select
             name="semestar"
             id="semestar"
-            class="outline outline-2 outline-offset-2 outline-primary-100 rounded-md h-9 p-1"
-          >
-            <option value="" selected>-- Select semestar --</option>
-            <option value="first">First</option>
-            <option value="second">Second</option>
-            <option value="third">Third</option>
-            <option value="fourth">Fourth</option>
-            <option value="fifth">Fifth</option>
-            <option value="sixth">Sixth</option>
-            <option value="seventh">Seventh</option>
-            <option value="eighth">Eighth</option>
-          </select>
+            class="outline outline-2 outline-primary-100 bg-white rounded-md h-9 p-1"
+          ></select>
         </div>
 
         <div class="course-box"></div>
